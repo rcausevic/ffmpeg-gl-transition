@@ -1,8 +1,8 @@
 diff --git a/libavfilter/Makefile b/libavfilter/Makefile
-index a90ca30ad7..c0fc73be46 100644
+index ff2a06c262..1fd8cc0e3b 100644
 --- a/libavfilter/Makefile
 +++ b/libavfilter/Makefile
-@@ -367,6 +367,7 @@ OBJS-$(CONFIG_YADIF_FILTER)                  += vf_yadif.o
+@@ -553,6 +553,7 @@ OBJS-$(CONFIG_YAEPBLUR_FILTER)               += vf_yaepblur.o
  OBJS-$(CONFIG_ZMQ_FILTER)                    += f_zmq.o
  OBJS-$(CONFIG_ZOOMPAN_FILTER)                += vf_zoompan.o
  OBJS-$(CONFIG_ZSCALE_FILTER)                 += vf_zscale.o
@@ -11,14 +11,14 @@ index a90ca30ad7..c0fc73be46 100644
  OBJS-$(CONFIG_ALLRGB_FILTER)                 += vsrc_testsrc.o
  OBJS-$(CONFIG_ALLYUV_FILTER)                 += vsrc_testsrc.o
 diff --git a/libavfilter/allfilters.c b/libavfilter/allfilters.c
-index 6eac828616..0570c1c2aa 100644
+index 119de40b25..14eebee964 100644
 --- a/libavfilter/allfilters.c
 +++ b/libavfilter/allfilters.c
-@@ -357,6 +357,7 @@ extern AVFilter ff_vf_yadif;
- extern AVFilter ff_vf_zmq;
- extern AVFilter ff_vf_zoompan;
- extern AVFilter ff_vf_zscale;
-+extern AVFilter ff_vf_gltransition;
+@@ -518,6 +518,7 @@ extern const AVFilter ff_vf_yaepblur;
+ extern const AVFilter ff_vf_zmq;
+ extern const AVFilter ff_vf_zoompan;
+ extern const AVFilter ff_vf_zscale;
++extern const AVFilter ff_vf_gltransition;
  
- extern AVFilter ff_vsrc_allrgb;
- extern AVFilter ff_vsrc_allyuv;
+ extern const AVFilter ff_vsrc_allrgb;
+ extern const AVFilter ff_vsrc_allyuv;
