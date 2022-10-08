@@ -22,3 +22,4 @@ index 119de40b25..14eebee964 100644
  
  extern const AVFilter ff_vsrc_allrgb;
  extern const AVFilter ff_vsrc_allyuv;
+ 
